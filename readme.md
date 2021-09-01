@@ -12,8 +12,11 @@ See each "changelog.md" in each subfolder (mod). The changelog includes changes 
 - License: See readme.md and license.txt in each subfolder (mod).
 
 ### Media
-- MirceaKitsune & Jordach (default 3d "character" model formerly called "player" and basis for 3d_armor_character), stujones11 & Lee "ExeterDad" (changes specific to 3d_armor_character), Poikilos (changes specific to models with Poikilos in the filename at <https://github.com/poikilos/modern_armor>)
-- No upstream 3d_armor textures are expected to appear in this repository, but if so, they are Copyright (C) 2017-2019 davidthecreator - CC-BY-SA 3.0.
+- MirceaKitsune: original "player" model
+- Jordach: changes specific to the 3D "character" model (The "character" model is the basis for "3d_armor_character")
+- stujones11 & Lee "ExeterDad": armor, wielditem, shield, and any other changes in "3d_armor_character"
+- Poikilos: square skin and modern armor models (and any others having Poikilos in the filename as they are named at <https://github.com/poikilos/modern_armor>)
+- No upstream 3d_armor textures are expected to appear in this modpack, but if so, they are Copyright (C) 2017-2019 davidthecreator - CC-BY-SA 3.0.
 
 #### License URLs
 - Creative Commons Attribution-ShareAlike 3.0 Unported [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
