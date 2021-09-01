@@ -12,7 +12,7 @@ See each "changelog.md" in each subfolder (mod). The changelog includes changes 
 - License: See readme.md and license.txt in each subfolder (mod).
 
 ### Media
-- MirceaKitsune & Jordach for (default 3d character model), stujones11 & Lee "ExeterDad" (3d_armor_character).
+- MirceaKitsune & Jordach (default 3d "character" model formerly called "player" and basis for 3d_armor_character), stujones11 & Lee "ExeterDad" (changes specific to 3d_armor_character), Poikilos (changes specific to models with Poikilos in the filename at <https://github.com/poikilos/modern_armor>)
 - No upstream 3d_armor textures are expected to appear in this repository, but if so, they are Copyright (C) 2017-2019 davidthecreator - CC-BY-SA 3.0.
 
 #### License URLs
