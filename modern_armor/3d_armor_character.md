@@ -8,8 +8,17 @@ The sections named by parts describe the stujones11 3d_armor_character UVs and s
 ## Character
 (first material ID)
 
+Flaws are inherited from MirceaKitsune's model and should be fixed by flipping the following faces (For full compatibility, don't "fix" these nor fix armor UVS. For issues in MirceaKitsune's, see [player-MirceaKitsune.md](player-MirceaKitsune.md)).
+- R Arm: bottom
+- L Arm: bottom
+- torso: bottom
+- R Leg: top
+- L Leg: top
+- head: bottom
+- hat: bottom
+
 ### Convert from rectangular to square skin
-(From "1.7" to "1.8" style skin)
+(From "1.7" to "1.8" style skin; without first doing the fixes above)
 
 See <https://www.youtube.com/watch?v=daIbBi5Tjas>, or the
 Timster488 skin_timplate_new.png skin ("Char2.0 by Timster488")
@@ -18,23 +27,18 @@ which illustrates how the top and bottom flow into the other parts.
 - Select a square skin in a Blender UV editor panel.
 
 Leg:
-- Copy right leg to left leg area.
+- Copy right leg to left leg area, then for the left, proceed below.
 - Switch outer & inner left leg rectangles.
-- Flip each rectangle individually except front.
+- Individually flip each rectangle horizontally except front.
   - flip left bottom though
     - not other squares
 
 Arm:
 - Copy right arm to left arm.
 - Switch outer & inner left arm rectangles.
-  - [x] Flip the right bottom to match Timster488?! Was Stujones11's wrong all along??
-    - [ ] Is it MirceaKitsune's fault (original model)?
+  - Flip the right bottom
 - Flip each rectangle individually except front.
   - not squares
-
-Torso
-- [x] Flip the bottom to match Timster488?! Was Stujones11's wrong all along??
-  - [ ] Is it MirceaKitsune's fault (original model)?
 
 Head
 - already done (1.7 includes the hat layer): offset is .1 on each side
@@ -44,8 +48,10 @@ Head
 
 ### Material
 (second material ID)
+
 The notes below are on the blocks of the mesh that have the "Armor" material ID (the second ID).
-The issues expressed will assist with painting but are not planned to be "resolved" ever, since existing skins depend on the odd UV layout.
+
+The issues below will assist with painting but are not planned to be "resolved" ever, since existing skins depend on the odd UV layout.
 
 #### Leggings
 (includes 1 pixel of the torso block as the "waist")
@@ -64,24 +70,28 @@ The issues expressed will assist with painting but are not planned to be "resolv
 - There are issues. Was Stujones11 wrong all along?? Yes:
   - outer: flipped on the right instead of left!
 
-
 ### Armor sizing
 (Sizing is relative to the Character layer)
 
 #### Leggings
 - .3 back & front expansion
 - .2 outside expansion
-- top: (6.9-6.75)
-- bottom: -.1 (from 0, goes into ground)
+- top: 0.85 (6.9-6.75)
+- bottom: .1 (from 0; goes into ground to -.1)
 
 #### Boots
-- bottom: -.2 (from 0, so goes into ground)
+- bottom: .2 (from 0, so goes into ground)
 
 #### Chestplate
-- It is ok (Nothing is flipped on the right side).
+- sides, front, back: .2
+- top: .2
+- bottom: .15
+- The UVs are ok (Nothing is flipped on the right side).
 
 ##### Arms
-- bottom: (6.75-6.5)
+- inside: .2
+- other sides & top: .3
+- bottom: .25 (6.75-6.5)
 
 
 ## Wielditem
